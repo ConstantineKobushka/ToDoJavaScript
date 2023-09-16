@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Приложение ToDo</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Приложение ToDo</h1>
+        <p class="header__subtitle">список дел на сегодня</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="list-state__wrraper wrapper">
+          <div id="emptyList" class="list-state">
+            <img
+              class="list-state__img"
+              src="./img/taskslist-empty.svg"
+              alt="Empty"
+            />
+            <div class="list-state__inner">
+              <p class="list-state__title">Акуна Матата</p>
+              <p class="list-state__title">Никаких Забот</p>
+            </div>
+          </div>
+          <div id="fullList" class="list-state">
+            <img
+              class="list-state__img"
+              src="./img/taskslist-full.svg"
+              alt="Empty"
+            />
+            <div class="list-state__inner">
+              <p class="list-state__title">Полдела сделал тот</p>
+              <p class="list-state__title">Кто уже начал</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- List of tasks -->
+        <div class="task-wrapper wrapper">
+          <ul id="tasksList" class="list-group"></ul>
+        </div>
+        <!-- List of tasks -->
+
+        <div class="form-wrapper wrapper">
+          <p class="form__title">Добавить новую задачу</p>
+          <form id="form" class="form">
+            <div class="form__box">
+              <input
+                type="text"
+                class="form__input"
+                id="taskInput"
+                placeholder="Текст задачи"
+                required
+              />
+              <p class="form__text">
+                Что делаем, сколько времени тратим, какой результат получаем.
+              </p>
+              <button type="submit" class="form__btn btn">
+                Добавить задачу
+              </button>
+            </div>
+          </form>
+          <div class="button__wrraper">
+            <button id="removeDoneTasks" class="removedonetasks__btn btn">
+              Удалить выполненные задачи
+            </button>
+            <button id="removeEveryTasks" class="removeeverytasks__btn btn">
+              Удалить все задачи
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a
+          class="footer__link"
+          href="https://constantinekobushka.github.io/Portfolio/#portfolio"
+          >© Кобушка Константин</a
+        >
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
