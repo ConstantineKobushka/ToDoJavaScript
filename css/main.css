@@ -98,6 +98,10 @@ body {
 }
 .task-item__title {
   font-weight: 400;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
 }
 .task-item__buttons {
   gap: 0 10px;
@@ -212,6 +216,9 @@ body {
 }
 
 @media (max-width: 450px) {
+  .form__btn {
+    width: 100%;
+  }
   .removeeverytasks__btn {
     height: 97.6px;
   }
