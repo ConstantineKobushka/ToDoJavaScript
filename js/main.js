@@ -33,8 +33,6 @@ function addTask(event) {
   event.preventDefault();
   // Достаём текст задачи из поля ввода
   const taskText = taskInput.value.trim();
-  console.log(taskText);
-  console.log(taskText.length);
   if (taskText.length === 0) {
     taskInput.value = '';
     taskInput.focus();
